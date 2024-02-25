@@ -1,0 +1,14 @@
+/* Mixins son muy parecidos a los extends, pero la diferencia principal es que nos permite decidir en el futuro, es decir cuando usemos o incluyamos este mixin en un elemento, que valores van a tener cada una de las propiedades que estan dentro del mixin */
+
+@mixin insame ($border, $color) {
+    border: $border;
+    color: $color;
+}
+
+.boton-ok {
+    @include insame(1px solid black, grey)
+}
+
+.navbar {
+    @include insame(4px dotted orange, blue)
+}

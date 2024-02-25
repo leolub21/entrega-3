@@ -1,0 +1,30 @@
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.581);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  
+    nav {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  
+      a {
+        color: white;
+        font-size: 14px;
+  
+        img {
+          width: 60px;
+        }
+      }
+  
+      img:hover {
+        transform: scale(1.5);
+        transition: all 700ms ease-in-out;
+        opacity: 0.9;
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+/* Extends son como una bolsa de propiedades que podemos reutilizar o heredar en distintos lugares, es decir creamos esto una vez y lo podemos trasladar a muchos lugares en nuestro código */
+
+/* % placeholder + nombre { propiedades */
+
+
+/* Todos mis botones son iguales en estructura y solo cambia su background color */
+
+
+%botones {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.button-error {
+    background-color: red;
+    @extend %botones;
+}
+
+.button-ok {
+    background-color: green;
+    @extend %botones;
+}
+
+.button-disabled {
+    background-color: grey;
+    @extend %botones;
+}
+

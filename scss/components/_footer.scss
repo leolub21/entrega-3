@@ -1,0 +1,22 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+  
+    a {
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      color: white;
+      border-radius: 15px;
+    }
+  
+    .social {
+      margin-right: 30px;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }

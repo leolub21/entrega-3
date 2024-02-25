@@ -1,0 +1,19 @@
+/* Mapas nos permoten hacer listas pero de cualquier valor */
+
+$bg-user: (
+    /* key --> valor */
+    color-standar: #ccc,
+    border-standar: 1px dotted grey,
+    font-size-standar: 28px
+);
+
+$bg-user-gold: (
+    color-gold: black,
+    border-gold: 1px dotted gold,
+    font-size-gold: 44px
+);
+
+.standard {
+    color: map-get($bg-user , color-standar);
+    font-size: map-get($bg-user, font-size-standar);
+}
