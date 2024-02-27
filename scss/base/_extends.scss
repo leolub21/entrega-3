@@ -6,24 +6,16 @@
 /* Todos mis botones son iguales en estructura y solo cambia su background color */
 
 
-%botones {
-    border: 1px solid black;
+%button {
     padding: 10px;
-    border-radius: 4px;
+    color: white;
+    border-radius: 15px;
 }
 
-.button-error {
-    background-color: red;
-    @extend %botones;
+.button-home {
+    @extend %button;
+    background-color: rgb(0, 0, 0);
+    &:hover{
+        background-color: $primary-color;
+    }
 }
-
-.button-ok {
-    background-color: green;
-    @extend %botones;
-}
-
-.button-disabled {
-    background-color: grey;
-    @extend %botones;
-}
-

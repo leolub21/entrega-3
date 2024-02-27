@@ -1,5 +1,149 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Colores */
+/* Extends son como una bolsa de propiedades que podemos reutilizar o heredar en distintos lugares, es decir creamos esto una vez y lo podemos trasladar a muchos lugares en nuestro código */
+/* % placeholder + nombre { propiedades */
+/* Todos mis botones son iguales en estructura y solo cambia su background color */
+.button-home {
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+}
+
+.button-home {
+  background-color: rgb(0, 0, 0);
+}
+.button-home:hover {
+  background-color: blue;
+}
+
+/* Mapas nos permiten hacer listas pero de cualquier valor */
+@font-face {
+  font-family: logo-rolex;
+  src: url("fonts/Baskervald-ADF-Std.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Mixins son muy parecidos a los extends, pero la diferencia principal es que nos permite decidir en el futuro, es decir cuando usemos o incluyamos este mixin en un elemento, que valores van a tener cada una de las propiedades que estan dentro del mixin */
+.form-border {
+  border: 3px solid blue;
+  color: blue;
+}
+
+.panerai a, .breitling a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tag a {
+  color: rgb(233, 83, 83);
+}
+.tag a:hover {
+  color: rgb(21, 139, 84);
+}
+
+.omega a {
+  color: rgb(192, 33, 33);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.link-rolex a {
+  color: rgb(22, 77, 22);
+  font-family: "logo-rolex", Garamond;
+}
+.link-rolex a:hover {
+  color: rgb(148, 140, 24);
+}
+
+.link-breitling a {
+  color: rgba(58, 73, 90, 0.993);
+}
+.link-breitling a:hover {
+  color: rgb(255, 224, 46);
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.581);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.banner nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner nav a {
+  color: white;
+  font-size: 15px;
+}
+.banner nav a img {
+  width: 80px;
+}
+.banner nav img:hover {
+  transform: scale(1.5);
+  transition: all 900ms ease-in-out;
+  opacity: 0.9;
+}
+
+.origen h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.origen p,
+.origen img,
+.origen span,
+.origen .editorial p {
+  margin-bottom: 10px;
+}
+.origen span {
+  display: block;
+  font-weight: 600;
+}
+.origen img {
+  width: auto;
+}
+
+.editorial {
+  margin-top: 30px;
+  color: blue;
+  font-weight: bolder;
+  margin-bottom: 70px;
+}
+
+.colecciones h1 {
+  margin-bottom: 22px;
+}
+.colecciones section h3 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.colecciones section p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.colecciones section a {
+  margin-bottom: 30px;
+  display: block;
+  font-weight: bolder;
+}
+.colecciones video,
+.colecciones iframe {
+  margin-block-start: 50px;
+  height: 70vh;
+  width: 100%;
+  border-radius: 25px;
+}
+
+form {
+  background-color: greenyellow;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -21,122 +165,6 @@ footer .social {
   justify-content: flex-end;
 }
 
-.banner {
-  background-color: rgba(0, 0, 0, 0.581);
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-.banner nav {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.banner nav a {
-  color: white;
-  font-size: 14px;
-}
-.banner nav a img {
-  width: 60px;
-}
-.banner nav img:hover {
-  transform: scale(1.5);
-  transition: all 700ms ease-in-out;
-  opacity: 0.9;
-}
-
-form {
-  background-color: greenyellow;
-  border: 3px solid blue;
-  border-radius: 10px;
-  padding: 10px;
-  width: 50%;
-}
-
-* {
-  margin: 0;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-main {
-  padding: 20px 20px 60px 20px;
-}
-
-.video {
-  margin-bottom: 70px;
-}
-.video iframe {
-  width: 100%;
-  height: 70vh;
-  border-radius: 15px;
-}
-
-.panerai a,
-.omega a,
-.breitling a,
-.rolex a {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.rolex a {
-  color: rgb(22, 77, 22);
-  font-family: "logo-rolex", Garamond;
-}
-
-.origen h3 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-.origen p,
-.origen img,
-.origen span,
-.origen .editorial p {
-  margin-bottom: 10px;
-}
-.origen span {
-  display: block;
-  font-weight: 600;
-}
-.origen img {
-  width: 100%;
-}
-
-.editorial {
-  margin-top: 30px;
-  color: blue;
-  font-weight: bolder;
-  margin-bottom: 70px;
-}
-
-.colecciones h1 {
-  margin-bottom: 25px;
-}
-.colecciones section h3 {
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-.colecciones section p {
-  margin-bottom: 10px;
-}
-.colecciones section a {
-  margin-bottom: 25px;
-  display: block;
-  font-weight: bolder;
-}
-.colecciones video,
-.colecciones iframe {
-  margin-block-start: 50px;
-  height: 70vh;
-  width: 100%;
-  border-radius: 25px;
-}
-
 .tag-heuer {
   background-color: rgb(233, 83, 83);
 }
@@ -146,16 +174,12 @@ main {
 .tag-heuer a {
   color: rgb(21, 139, 84);
 }
-.tag-heuer .carousel-tag {
+.tag-heuer .carousel-tag, .tag-heuer .modelos-tag {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 10px;
   grid-template-areas: "ca f1 aq mo co" "ca f1 aq mo co";
-}
-.tag-heuer .fa {
-  width: 50%;
-  margin-top: 50px;
 }
 .tag-heuer .carousel-item {
   background-color: blue;
@@ -168,6 +192,20 @@ main {
   width: 100%;
   scroll-snap-align: center;
   justify-content: space-around;
+}
+
+.fa {
+  margin-block-start: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  margin-block-start: 50px;
+  height: 70vh;
+  width: 100%;
+  border-radius: 25px;
 }
 
 .panerai section a {
@@ -185,65 +223,7 @@ main {
   border-radius: 25px;
 }
 .panerai img {
-  width: 70%;
-}
-
-.omega h1 {
-  color: rgb(192, 33, 33);
-  background-color: rgba(88, 147, 202, 0.767);
-}
-.omega .fondo-reloj {
-  background-image: url("/images/omega-seamaster-diver-300m-omega-diver-splash.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  z-index: -1;
-  height: 130vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 500px;
-}
-.omega .carousel {
-  margin-top: 100px;
-}
-.omega .carousel .carousel-item {
-  background-color: rgb(166, 182, 201);
-}
-
-.breitling {
-  background-color: rgb(255, 224, 46);
-}
-.breitling h1 {
-  color: rgba(58, 73, 90, 0.993);
-  background-color: rgb(255, 224, 46);
-}
-.breitling .img-breitling img {
-  width: 100%;
-}
-.breitling .img-breitling h5 {
-  display: flex;
-  justify-content: center;
-}
-
-.rolex {
-  background-color: rgb(22, 77, 22);
-}
-.rolex h1 {
-  color: rgb(148, 140, 24);
-  background-color: rgb(22, 77, 22);
-}
-.rolex section a {
-  margin-bottom: 25px;
-  display: block;
-  color: rgb(148, 140, 24);
-  font-weight: 700;
-}
-.rolex img {
-  width: 50%;
+  width: 75%;
 }
 
 .pulsate-bck {
@@ -290,14 +270,110 @@ main {
     transform: scale(1);
   }
 }
+.omega h1 {
+  color: rgb(192, 33, 33);
+  background-color: rgba(88, 147, 202, 0.767);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.omega h2 {
+  text-decoration: underline;
+  font-family: cursive, sans-serif, "Arial Narrow", Arial;
+}
+.omega .fondo-reloj {
+  background-image: url("/images/omega-seamaster-diver-300m-omega-diver-splash.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+  height: 130vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 500px;
+}
+.omega .carousel {
+  margin-top: 235px;
+}
+.omega .carousel .carousel-item {
+  background-color: rgb(166, 182, 201);
+}
+
+.breitling {
+  background-color: rgb(255, 229, 143);
+}
+.breitling h1 {
+  color: rgb(255, 224, 46);
+  background-color: rgba(58, 73, 90, 0.993);
+}
+.breitling a {
+  color: rgba(58, 73, 90, 0.993);
+}
+.breitling .img-breitling img {
+  width: 100%;
+}
+.breitling .img-breitling h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.rolex {
+  background-color: rgb(148, 140, 24);
+}
+.rolex h1 {
+  color: rgb(148, 140, 24);
+  background-color: rgb(22, 77, 22);
+  font-family: logo-rolex;
+}
+.rolex section h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: logo-rolex;
+}
+.rolex section a {
+  margin-bottom: 25px;
+  display: block;
+  color: rgb(22, 77, 22);
+  font-weight: 700;
+}
+.rolex img {
+  width: 50%;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 20px 20px 60px 20px;
+}
+
+.video {
+  margin-bottom: 70px;
+}
+.video iframe {
+  width: 100%;
+  height: 70vh;
+  border-radius: 15px;
+}
+
 @media only screen and (max-width: 768px) {
+  .origen img {
+    width: 100% !important;
+  }
   form {
     width: 100% !important;
   }
   .banner nav a img {
     width: 40px !important;
   }
-  .carousel-tag {
+  .carousel-tag, .modelos-tag {
     display: flex !important;
     flex-direction: column !important;
   }

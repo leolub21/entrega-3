@@ -1,32 +1,46 @@
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  background-color: black;
-  padding: 20px;
 
+
+.panerai,.breitling {
   a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-
-    li {
-      margin-right: 20px;
-
-      a {
-        color: white;
-        font-weight: normal;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
+
+.tag {
+  a {
+    color: $color-tag-red;
+    &:hover {
+      color: $color-tag-green;
+    }
+  }  
+}
+
+.omega {
+  a {
+  color: $color-omega; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}
+
+.link-rolex {
+  a {
+    color: $color-rolex-green;
+    font-family: 'logo-rolex', Garamond;
+  }
+  a:hover {
+    color: $color-rolex-yellow;
+  }
+}
+
+.link-breitling {
+  a {
+    color: $color-breitling-blue;
+    &:hover {
+      color: $color-breitling-yellow;
+    }
+  }  
+}
+
+
+
+

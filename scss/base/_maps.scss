@@ -1,0 +1,14 @@
+/* Mapas nos permiten hacer listas pero de cualquier valor */
+
+$rolex: (
+    primary-color: $color-rolex-green,
+    secondary-color: $color-rolex-yellow,
+    font: logo-rolex
+);
+
+@font-face {
+    font-family: logo-rolex;
+    src: url('fonts/Baskervald-ADF-Std.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

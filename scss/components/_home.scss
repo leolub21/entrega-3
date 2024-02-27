@@ -1,0 +1,65 @@
+.origen {
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  p,
+  img,
+  span,
+  .editorial p {
+    margin-bottom: 10px;
+  }
+
+  span {
+    display: block;
+    font-weight: 600;
+  }
+
+  img {
+    width: auto;
+  }
+}
+
+
+.editorial {
+  margin-top: 30px;
+  color: blue;
+  font-weight: bolder;
+  margin-bottom: 70px;
+}
+
+
+
+.colecciones {
+  h1 {
+    margin-bottom: 22px;
+  }
+
+  section {
+    h3 {
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    a {
+      margin-bottom: 30px;
+      display: block;
+      font-weight: bolder;
+    }
+  }
+
+  video,
+  iframe {
+    margin-block-start: 50px;
+    height: 70vh;
+    width: 100%;
+    border-radius: 25px;
+  }
+}

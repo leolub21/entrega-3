@@ -1,0 +1,24 @@
+.breitling {
+    background-color: $bg-breitling;
+    
+    h1 {
+      color: $color-breitling-yellow;
+      background-color: $color-breitling-blue;
+  
+    }
+    a { 
+      color: $color-breitling-blue;
+    }
+  
+    .img-breitling {
+      img {
+        width: 100%;
+      }
+  
+      h5 {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  

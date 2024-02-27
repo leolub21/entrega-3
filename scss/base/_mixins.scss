@@ -5,10 +5,6 @@
     color: $color;
 }
 
-.boton-ok {
-    @include insame(1px solid black, grey)
-}
-
-.navbar {
-    @include insame(4px dotted orange, blue)
+.form-border {
+    @include insame(3px solid blue, blue)
 }

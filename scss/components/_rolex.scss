@@ -1,0 +1,28 @@
+.rolex {
+    background-color: map-get($rolex , secondary-color);
+  
+    h1 {
+      color: map-get($rolex , secondary-color);
+      background-color: map-get($rolex , primary-color);
+      font-family: map-get($rolex , font )
+    }
+  
+    section {
+      h2 {
+        margin-bottom: 10px;
+        text-decoration: underline;
+        font-family: map-get($rolex , font )
+      }
+      a {
+        margin-bottom: 25px;
+        display: block;
+        color: $color-rolex-green;
+        font-weight: 700;
+      }
+    }
+  
+    img{
+      width: 50%;
+    }
+  
+  }
