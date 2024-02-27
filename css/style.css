@@ -125,13 +125,14 @@
   font-weight: bold;
 }
 .colecciones section a {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: block;
   font-weight: bolder;
 }
 .colecciones video,
 .colecciones iframe {
-  margin-block-start: 50px;
+  margin-block-start: 70px;
+  margin-bottom: 50px;
   height: 70vh;
   width: 100%;
   border-radius: 25px;
@@ -208,6 +209,9 @@ video {
   border-radius: 25px;
 }
 
+.panerai section h4 {
+  text-decoration: underline;
+}
 .panerai section a {
   margin-bottom: 25px;
   display: inline-block;
@@ -223,7 +227,7 @@ video {
   border-radius: 25px;
 }
 .panerai img {
-  width: 75%;
+  width: 65%;
 }
 
 .pulsate-bck {
