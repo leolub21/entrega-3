@@ -322,6 +322,9 @@ video {
   display: flex;
   justify-content: center;
 }
+.breitling .carousel-item {
+  background-color: rgb(166, 182, 201);
+}
 
 .rolex {
   background-color: rgb(148, 140, 24);
