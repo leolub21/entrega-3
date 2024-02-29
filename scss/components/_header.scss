@@ -9,6 +9,7 @@
 .tag {
   a {
     color: $color-tag-red;
+
     &:hover {
       color: $color-tag-green;
     }
@@ -22,25 +23,31 @@
   }
 }
 
-.link-rolex {
-  a {
-    color: $color-rolex-green;
-    font-family: 'logo-rolex', Garamond;
-  }
-  a:hover {
-    color: $color-rolex-yellow;
-  }
-}
-
 .link-breitling {
-  a {
-    color: $color-breitling-blue;
-    &:hover {
-      color: $color-breitling-yellow;
-    }
-  }  
-}
+    color: $color-breitling-yellow;
+    background-color: $color-breitling-blue;
+    border-radius: 2%;
 
+    &:hover {
+      color: $color-breitling-blue;
+      background-color: $color-breitling-yellow;
+      border-style: double;
+      border-radius: 2%;
+      }
+  }  
+
+  .resaltado {
+    color: $color-rolex-yellow;
+    background-color: $color-rolex-green;
+    font-family: 'logo-rolex';    
+      
+    &:hover {
+      color: $color-rolex-green;
+      background-color: $color-rolex-yellow;
+      border-style: double;
+      border-radius: 2%;
+    }
+  }
 
 
 

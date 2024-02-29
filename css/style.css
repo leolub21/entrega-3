@@ -46,19 +46,28 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.link-rolex a {
-  color: rgb(22, 77, 22);
-  font-family: "logo-rolex", Garamond;
+.link-breitling {
+  color: rgb(255, 224, 46);
+  background-color: rgba(58, 73, 90, 0.993);
+  border-radius: 2%;
 }
-.link-rolex a:hover {
-  color: rgb(148, 140, 24);
+.link-breitling:hover {
+  color: rgba(58, 73, 90, 0.993);
+  background-color: rgb(255, 224, 46);
+  border-style: double;
+  border-radius: 2%;
 }
 
-.link-breitling a {
-  color: rgba(58, 73, 90, 0.993);
+.resaltado {
+  color: rgb(148, 140, 24);
+  background-color: rgb(22, 77, 22);
+  font-family: "logo-rolex";
 }
-.link-breitling a:hover {
-  color: rgb(255, 224, 46);
+.resaltado:hover {
+  color: rgb(22, 77, 22);
+  background-color: rgb(148, 140, 24);
+  border-style: double;
+  border-radius: 2%;
 }
 
 .banner {
@@ -283,23 +292,25 @@ video {
   text-decoration: underline;
   font-family: cursive, sans-serif, "Arial Narrow", Arial;
 }
+.omega .origen > p {
+  font-weight: 900;
+}
 .omega .fondo-reloj {
   background-image: url("/images/omega-seamaster-diver-300m-omega-diver-splash.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: -1;
-  height: 130vh;
+  height: 160vh;
   width: 100vw;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-bottom: 500px;
 }
 .omega .carousel {
-  margin-top: 235px;
+  margin-top: 310px;
 }
 .omega .carousel .carousel-item {
   background-color: rgb(166, 182, 201);

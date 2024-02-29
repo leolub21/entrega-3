@@ -4,34 +4,46 @@
       background-color: $bg-omega;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+    
     h2 {
       text-decoration: underline;
       font-family: cursive, sans-serif, 'Arial Narrow', Arial;
     }
+    
+    .origen > p {
+      font-weight: 900;
+     }    
   
     .fondo-reloj {
       background-image: url('/images/omega-seamaster-diver-300m-omega-diver-splash.jpg');
       background-size: cover;
       background-position: center;
-      opacity: 0.6;
+      opacity: 0.5;
       z-index: -1;
-      height: 130vh;
+      height: 160vh;
       width: 100vw;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      left: 0;
-      margin-bottom: 500px;
-    }
+      left: 0; 
+    }     
   
     .carousel {
-      margin-top: 235px;
+      margin-top: 310px;
   
       .carousel-item {
         background-color: rgb(166, 182, 201);
       }
     }
+  }  
+    
+    
+  
+
+
+
+
+
   
   
-  }
