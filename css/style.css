@@ -147,6 +147,13 @@
   border-radius: 25px;
 }
 
+.social {
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
 form {
   background-color: greenyellow;
   border-radius: 10px;
@@ -167,12 +174,6 @@ footer a {
   padding: 10px;
   color: white;
   border-radius: 15px;
-}
-footer .social {
-  margin-right: 30px;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .tag-heuer {
